@@ -1,0 +1,75 @@
+body {
+    /* font-family: 'Del Recuerdo St', sans-serif; */
+                                                
+}
+.gameHeader {
+    font-family: 'Del Recuerdo St', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+.gameTitle {
+    font-size: 30px;
+    margin: 0 20px;
+    padding: 0;
+
+}
+.scoreboard {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.turns {
+    display: flex;
+    justify-content: space-between;
+}
+.cardGame > ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cardGame > ul > li {
+    /* display: inline;
+    float: left; */
+}
+
+.cardGame > ul > li > div {
+/* display: inline-block; */
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 200px;
+min-height: 200px;
+margin: 10px;
+padding: 10px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
