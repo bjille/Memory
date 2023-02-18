@@ -46,16 +46,26 @@ body {
     /* display: inline;
     float: left; */
 }
+.cardGame > ul > li > .cardWrapper {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 10px;
+    padding: 10px;
+    }
 
-.cardGame > ul > li > div {
+.cardGame > ul > li > .cardWrapper > .card {
 /* display: inline-block; */
 display: flex;
 justify-content: center;
 align-items: center;
 min-width: 200px;
 min-height: 200px;
-margin: 10px;
-padding: 10px;
+/* margin: 10px;
+padding: 10px; */
 }
 
 .card {

@@ -54,12 +54,16 @@
                 
         for (let i = 0; i < cards.length; i++) {
             let li = document.createElement('li');
+            let cardWrapper = document.createElement('div');
             let content = document.createElement('div');
+            cardWrapper.classList.add("cardWrapper");
             content.classList.add("card");
             content.setAttribute("value", cards[i]);
             content.setAttribute("selected", false);
-            content.innerHTML = cards[i];
-            li.appendChild(content);
+            // content.innerHTML = cards[i];
+            // 
+            cardWrapper.appendChild(content);
+            li.appendChild(cardWrapper);
             document.querySelector("#cardList").appendChild(li);
         }
     }
