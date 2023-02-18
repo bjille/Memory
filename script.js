@@ -17,19 +17,6 @@
         document.querySelector(".turnsScore").innerHTML = turns;
     }
 
-    // function generateCouples(amountOfCards) {
-    //     cards = [];
-    //     for (let i = 0; i < amountOfCards; i++) {
-    //         colorCode = randomColorGenerator();
-    //         // 2 keer dezelfde kleurcode toevoegen aan array;
-    //         for (let index = 0; index < 2; index++) {
-    //         cards.push("#" + colorCode);
-    //         }        
-    //     }
-    //     // console.log(cards);
-    //     return cards;
-    // }
-
     const generateCouples = (amountOfCards) => {
         cards = [];
         for (let i = 0; i < amountOfCards; i++) {
@@ -86,10 +73,11 @@
     drawCards(shuffledCards);
 
     let clicklogic = e => {
-        // als de kaart reeds aangeklikt is, stop de functie
         clickCounter++;
+        // als er meer dan 2 kaarten aangeklik worden, stop de functie
         if (clickCounter > 2) return;
         e.setAttribute("selected", true);
+        // achtergrond tonen
         e.style.backgroundColor = e.getAttribute("value");
         currentValue = e.getAttribute("value");
         if (clickCounter == 1){
