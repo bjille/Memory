@@ -29,10 +29,46 @@ body {
     padding: 0;
     width: 200px;
 }
-.turns {
-    display: flex;
-    justify-content: space-between;
+.scoreboard > div {
+    /* display: flex; */
+    /* justify-content: space-between; */
 }
+.scoreboard > div > * {
+    display: inline-block;
+}
+.scoreboard > div :first-child {
+    text-align: left;
+}
+
+form{
+    /* max-width: 50%; */
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text], input[type=number] {
+    /* width: 100%; */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 .cardGame > ul {
     display: flex;
     flex-flow: row wrap;

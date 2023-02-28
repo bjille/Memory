@@ -22,12 +22,25 @@
           <div class="turnsScore"></div>
         </div>
         <div class="couples">
-          <div class="title">Couples</div>
+          <div class="title">Couples found</div>
           <div class="score"></div>
         </div>
       </div>
     </div>
     <div class="cardGame">
+      <form id="settings" action="">
+        <div class="nameInput">
+          <label for="txtName">Enter name:</label>
+          <input type="text" name="txtName" id="" />
+        </div>
+        <div class="couplesInput">
+          <label for="txtCouples">amount of couples:</label>
+          <input type="number" name="txtCouples" id="txtCouples" />
+        </div>
+        <div class="submit">
+          <button type="submit">Start Game</button>
+        </div>
+      </form>
       <ul id="cardList"></ul>
     </div>
     <script src="./script.js"></script>
